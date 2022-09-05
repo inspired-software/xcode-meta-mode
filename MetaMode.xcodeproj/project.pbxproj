@@ -1,0 +1,552 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3384248728C58C790063CDAC /* MetaModeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384248628C58C790063CDAC /* MetaModeApp.swift */; };
+		3384248928C58C790063CDAC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3384248828C58C790063CDAC /* ContentView.swift */; };
+		3384248B28C58C7B0063CDAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3384248A28C58C7B0063CDAC /* Assets.xcassets */; };
+		3384248E28C58C7B0063CDAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3384248D28C58C7B0063CDAC /* Preview Assets.xcassets */; };
+		3384249C28C58D1E0063CDAC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3384249B28C58D1E0063CDAC /* Cocoa.framework */; };
+		338424A128C58D1E0063CDAC /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */; };
+		338424A828C58D1E0063CDAC /* Template Switcher.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3384249928C58D1E0063CDAC /* Template Switcher.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3392532628C5CA5A00DC1CB3 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3384249D28C58D1E0063CDAC /* XcodeKit.framework */; };
+		3392532728C5CA5A00DC1CB3 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3384249D28C58D1E0063CDAC /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3392532B28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3392532A28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		338424A628C58D1E0063CDAC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3384247B28C58C790063CDAC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3384249828C58D1E0063CDAC;
+			remoteInfo = TemplateSwitcher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		338424AC28C58D1E0063CDAC /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				338424A828C58D1E0063CDAC /* Template Switcher.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3392532828C5CA5B00DC1CB3 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3392532728C5CA5A00DC1CB3 /* XcodeKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3384248328C58C790063CDAC /* Meta Mode for Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meta Mode for Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384248628C58C790063CDAC /* MetaModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaModeApp.swift; sourceTree = "<group>"; };
+		3384248828C58C790063CDAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		3384248A28C58C7B0063CDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3384248D28C58C7B0063CDAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3384248F28C58C7B0063CDAC /* MetaMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetaMode.entitlements; sourceTree = "<group>"; };
+		3384249928C58D1E0063CDAC /* Template Switcher.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Template Switcher.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384249B28C58D1E0063CDAC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		3384249D28C58D1E0063CDAC /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
+		338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
+		338424A428C58D1E0063CDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338424A528C58D1E0063CDAC /* TemplateSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TemplateSwitcher.entitlements; sourceTree = "<group>"; };
+		338424AD28C58D950063CDAC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		338424AE28C58D9F0063CDAC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		338424B028C58E090063CDAC /* StencilPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StencilPreprocessor.swift; sourceTree = "<group>"; };
+		3392532A28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WrapStencilTemplateSourceEditorCommand.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3384248028C58C790063CDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384249628C58D1E0063CDAC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384249C28C58D1E0063CDAC /* Cocoa.framework in Frameworks */,
+				3392532628C5CA5A00DC1CB3 /* XcodeKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3384247A28C58C790063CDAC = {
+			isa = PBXGroup;
+			children = (
+				338424AE28C58D9F0063CDAC /* README.md */,
+				338424AD28C58D950063CDAC /* LICENSE */,
+				3384248528C58C790063CDAC /* MetaMode */,
+				3384249F28C58D1E0063CDAC /* TemplateSwitcher */,
+				338424AF28C58E090063CDAC /* Utilities */,
+				3384249A28C58D1E0063CDAC /* Frameworks */,
+				3384248428C58C790063CDAC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3384248428C58C790063CDAC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3384248328C58C790063CDAC /* Meta Mode for Xcode.app */,
+				3384249928C58D1E0063CDAC /* Template Switcher.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3384248528C58C790063CDAC /* MetaMode */ = {
+			isa = PBXGroup;
+			children = (
+				3384248628C58C790063CDAC /* MetaModeApp.swift */,
+				3384248828C58C790063CDAC /* ContentView.swift */,
+				3384248A28C58C7B0063CDAC /* Assets.xcassets */,
+				3384248F28C58C7B0063CDAC /* MetaMode.entitlements */,
+				3384248C28C58C7B0063CDAC /* Preview Content */,
+			);
+			path = MetaMode;
+			sourceTree = "<group>";
+		};
+		3384248C28C58C7B0063CDAC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3384248D28C58C7B0063CDAC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3384249A28C58D1E0063CDAC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3384249B28C58D1E0063CDAC /* Cocoa.framework */,
+				3384249D28C58D1E0063CDAC /* XcodeKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3384249F28C58D1E0063CDAC /* TemplateSwitcher */ = {
+			isa = PBXGroup;
+			children = (
+				338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */,
+				3392532A28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift */,
+				338424A428C58D1E0063CDAC /* Info.plist */,
+				338424A528C58D1E0063CDAC /* TemplateSwitcher.entitlements */,
+			);
+			path = TemplateSwitcher;
+			sourceTree = "<group>";
+		};
+		338424AF28C58E090063CDAC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				338424B028C58E090063CDAC /* StencilPreprocessor.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3384248228C58C790063CDAC /* Meta Mode for Xcode */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3384249228C58C7B0063CDAC /* Build configuration list for PBXNativeTarget "Meta Mode for Xcode" */;
+			buildPhases = (
+				3384247F28C58C790063CDAC /* Sources */,
+				3384248028C58C790063CDAC /* Frameworks */,
+				3384248128C58C790063CDAC /* Resources */,
+				338424AC28C58D1E0063CDAC /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				338424A728C58D1E0063CDAC /* PBXTargetDependency */,
+			);
+			name = "Meta Mode for Xcode";
+			productName = MetaprogrammingMode;
+			productReference = 3384248328C58C790063CDAC /* Meta Mode for Xcode.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3384249828C58D1E0063CDAC /* Template Switcher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 338424A928C58D1E0063CDAC /* Build configuration list for PBXNativeTarget "Template Switcher" */;
+			buildPhases = (
+				3384249528C58D1E0063CDAC /* Sources */,
+				3384249628C58D1E0063CDAC /* Frameworks */,
+				3384249728C58D1E0063CDAC /* Resources */,
+				3392532828C5CA5B00DC1CB3 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Template Switcher";
+			productName = TemplateSwitcher;
+			productReference = 3384249928C58D1E0063CDAC /* Template Switcher.appex */;
+			productType = "com.apple.product-type.xcode-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3384247B28C58C790063CDAC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					3384248228C58C790063CDAC = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					3384249828C58D1E0063CDAC = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 3384247E28C58C790063CDAC /* Build configuration list for PBXProject "MetaMode" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3384247A28C58C790063CDAC;
+			productRefGroup = 3384248428C58C790063CDAC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3384248228C58C790063CDAC /* Meta Mode for Xcode */,
+				3384249828C58D1E0063CDAC /* Template Switcher */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3384248128C58C790063CDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384248E28C58C7B0063CDAC /* Preview Assets.xcassets in Resources */,
+				3384248B28C58C7B0063CDAC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384249728C58D1E0063CDAC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3384247F28C58C790063CDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3384248928C58C790063CDAC /* ContentView.swift in Sources */,
+				3384248728C58C790063CDAC /* MetaModeApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3384249528C58D1E0063CDAC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				338424A128C58D1E0063CDAC /* SourceEditorExtension.swift in Sources */,
+				3392532B28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		338424A728C58D1E0063CDAC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3384249828C58D1E0063CDAC /* Template Switcher */;
+			targetProxy = 338424A628C58D1E0063CDAC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3384249028C58C7B0063CDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3384249128C58C7B0063CDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		3384249328C58C7B0063CDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetaMode/MetaMode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_ASSET_PATHS = "\"MetaMode/Preview Content\"";
+				DEVELOPMENT_TEAM = L48NM5T974;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Inspired Software, LLC";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		3384249428C58C7B0063CDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MetaMode/MetaMode.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_ASSET_PATHS = "\"MetaMode/Preview Content\"";
+				DEVELOPMENT_TEAM = L48NM5T974;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.developer-tools";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Inspired Software, LLC";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		338424AA28C58D1E0063CDAC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TemplateSwitcher/TemplateSwitcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = L48NM5T974;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateSwitcher/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Template Switcher";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Inspired Software, LLC";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.template-switcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		338424AB28C58D1E0063CDAC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = TemplateSwitcher/TemplateSwitcher.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1.0.0;
+				DEVELOPMENT_TEAM = L48NM5T974;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TemplateSwitcher/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Template Switcher";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Inspired Software, LLC";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@executable_path/../../../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.template-switcher";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3384247E28C58C790063CDAC /* Build configuration list for PBXProject "MetaMode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3384249028C58C7B0063CDAC /* Debug */,
+				3384249128C58C7B0063CDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3384249228C58C7B0063CDAC /* Build configuration list for PBXNativeTarget "Meta Mode for Xcode" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3384249328C58C7B0063CDAC /* Debug */,
+				3384249428C58C7B0063CDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		338424A928C58D1E0063CDAC /* Build configuration list for PBXNativeTarget "Template Switcher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				338424AA28C58D1E0063CDAC /* Debug */,
+				338424AB28C58D1E0063CDAC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3384247B28C58C790063CDAC /* Project object */;
+}
