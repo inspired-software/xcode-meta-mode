@@ -16,8 +16,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "3384249828C58D1E0063CDAC"
-               BuildableName = "Template Switcher.appex"
-               BlueprintName = "Template Switcher"
+               BuildableName = "Meta Mode.appex"
+               BlueprintName = "Meta Mode"
                ReferencedContainer = "container:MetaMode.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

@@ -13,7 +13,7 @@
 		3384248E28C58C7B0063CDAC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3384248D28C58C7B0063CDAC /* Preview Assets.xcassets */; };
 		3384249C28C58D1E0063CDAC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3384249B28C58D1E0063CDAC /* Cocoa.framework */; };
 		338424A128C58D1E0063CDAC /* SourceEditorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */; };
-		338424A828C58D1E0063CDAC /* Template Switcher.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3384249928C58D1E0063CDAC /* Template Switcher.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		338424A828C58D1E0063CDAC /* Meta Mode.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 3384249928C58D1E0063CDAC /* Meta Mode.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		3392532628C5CA5A00DC1CB3 /* XcodeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3384249D28C58D1E0063CDAC /* XcodeKit.framework */; };
 		3392532728C5CA5A00DC1CB3 /* XcodeKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3384249D28C58D1E0063CDAC /* XcodeKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3392532B28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3392532A28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift */; };
@@ -36,7 +36,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				338424A828C58D1E0063CDAC /* Template Switcher.appex in Embed Foundation Extensions */,
+				338424A828C58D1E0063CDAC /* Meta Mode.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -61,7 +61,7 @@
 		3384248A28C58C7B0063CDAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3384248D28C58C7B0063CDAC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		3384248F28C58C7B0063CDAC /* MetaMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MetaMode.entitlements; sourceTree = "<group>"; };
-		3384249928C58D1E0063CDAC /* Template Switcher.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Template Switcher.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3384249928C58D1E0063CDAC /* Meta Mode.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Meta Mode.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3384249B28C58D1E0063CDAC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		3384249D28C58D1E0063CDAC /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
@@ -110,7 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				3384248328C58C790063CDAC /* Meta Mode for Xcode.app */,
-				3384249928C58D1E0063CDAC /* Template Switcher.appex */,
+				3384249928C58D1E0063CDAC /* Meta Mode.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 			productReference = 3384248328C58C790063CDAC /* Meta Mode for Xcode.app */;
 			productType = "com.apple.product-type.application";
 		};
-		3384249828C58D1E0063CDAC /* Template Switcher */ = {
+		3384249828C58D1E0063CDAC /* Meta Mode */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 338424A928C58D1E0063CDAC /* Build configuration list for PBXNativeTarget "Template Switcher" */;
+			buildConfigurationList = 338424A928C58D1E0063CDAC /* Build configuration list for PBXNativeTarget "Meta Mode" */;
 			buildPhases = (
 				3384249528C58D1E0063CDAC /* Sources */,
 				3384249628C58D1E0063CDAC /* Frameworks */,
@@ -198,9 +198,9 @@
 			);
 			dependencies = (
 			);
-			name = "Template Switcher";
+			name = "Meta Mode";
 			productName = TemplateSwitcher;
-			productReference = 3384249928C58D1E0063CDAC /* Template Switcher.appex */;
+			productReference = 3384249928C58D1E0063CDAC /* Meta Mode.appex */;
 			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +235,7 @@
 			projectRoot = "";
 			targets = (
 				3384248228C58C790063CDAC /* Meta Mode for Xcode */,
-				3384249828C58D1E0063CDAC /* Template Switcher */,
+				3384249828C58D1E0063CDAC /* Meta Mode */,
 			);
 		};
 /* End PBXProject section */
@@ -283,7 +283,7 @@
 /* Begin PBXTargetDependency section */
 		338424A728C58D1E0063CDAC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 3384249828C58D1E0063CDAC /* Template Switcher */;
+			target = 3384249828C58D1E0063CDAC /* Meta Mode */;
 			targetProxy = 338424A628C58D1E0063CDAC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -481,7 +481,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.template-switcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.xcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -508,7 +508,7 @@
 					"@executable_path/../../../../Frameworks",
 				);
 				MARKETING_VERSION = 1.0.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.template-switcher";
+				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.xcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -537,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		338424A928C58D1E0063CDAC /* Build configuration list for PBXNativeTarget "Template Switcher" */ = {
+		338424A928C58D1E0063CDAC /* Build configuration list for PBXNativeTarget "Meta Mode" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				338424AA28C58D1E0063CDAC /* Debug */,
