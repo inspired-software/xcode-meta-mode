@@ -6,7 +6,7 @@
 	<true/>
 	<key>com.apple.security.application-groups</key>
 	<array>
-		<string>$(TeamIdentifierPrefix)metaprogramming-mode</string>
+		<string>$(TeamIdentifierPrefix)meta-mode</string>
 	</array>
 </dict>
 </plist>
