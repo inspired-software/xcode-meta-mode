@@ -1,6 +1,6 @@
-# Meta Mode Xcode Extension
+# Meta Mode for Xcode
 
-Wraps and unwraps the template syntax in `*.stencil.swift` files containing Xcode placeholders. This creates an effect of switching editing contexts between writing Swift source code and Sourcery metaprogramming. Use of Xcode placeholders allows for autocompletion and syntax highlighting.
+Meta Mode is an Xcode Source Editor Extension that wraps and unwraps [Sourcery][sourcery] Stencil templates with Swift placeholders. This allows the Xcode source editor to switch between writing Swift source code and Sourcery metaprogramming by pressing Control-Option-Command-M without affecting Swift autocompletion and syntax highlighting.
 
 * `<#{% expression %}#>` maps to `{% expression %}`
 
@@ -28,8 +28,14 @@ Wraps and unwraps the template syntax in `*.stencil.swift` files containing Xcod
 
 8. Search for "Wrap/Unwrap".
 
-9. Set a key binding.
+9. Set the key binding by clicking on the field then pressing Control-Option-Command-M (or another key combination of your choosing).
 
-## Using With Sorcery
+## Using With Sourcery
 
-A preprocessor to convert back to a Sorcery compatible stencil file is included in the Utilities folder.
+A preprocessor to convert back to a [Sourcery][sourcery] compatible Stencil file is included in the Utilities folder. Files an `*.stencil.swift` extension are processed and written to the output folder with a `*.stencil` extension. The source and output folders may be the same. Make sure the `*.stencil.swift` files are excluded from your build.
+
+```
+./Utilities/StencilPreprocessor.swift <source folder> <output folder>
+```
+
+[sourcery]: https://github.com/krzysztofzablocki/Sourcery
