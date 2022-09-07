@@ -66,7 +66,7 @@
 		3384249D28C58D1E0063CDAC /* XcodeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XcodeKit.framework; path = Library/Frameworks/XcodeKit.framework; sourceTree = DEVELOPER_DIR; };
 		338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceEditorExtension.swift; sourceTree = "<group>"; };
 		338424A428C58D1E0063CDAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		338424A528C58D1E0063CDAC /* TemplateSwitcher.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TemplateSwitcher.entitlements; sourceTree = "<group>"; };
+		338424A528C58D1E0063CDAC /* XcodeMetaMode.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = XcodeMetaMode.entitlements; sourceTree = "<group>"; };
 		338424AD28C58D950063CDAC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		338424AE28C58D9F0063CDAC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		338424B028C58E090063CDAC /* StencilPreprocessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StencilPreprocessor.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 				338424AE28C58D9F0063CDAC /* README.md */,
 				338424AD28C58D950063CDAC /* LICENSE */,
 				3384248528C58C790063CDAC /* MetaMode */,
-				3384249F28C58D1E0063CDAC /* TemplateSwitcher */,
+				3384249F28C58D1E0063CDAC /* XcodeMetaMode */,
 				338424AF28C58E090063CDAC /* Utilities */,
 				3384249A28C58D1E0063CDAC /* Frameworks */,
 				3384248428C58C790063CDAC /* Products */,
@@ -144,15 +144,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3384249F28C58D1E0063CDAC /* TemplateSwitcher */ = {
+		3384249F28C58D1E0063CDAC /* XcodeMetaMode */ = {
 			isa = PBXGroup;
 			children = (
 				338424A028C58D1E0063CDAC /* SourceEditorExtension.swift */,
 				3392532A28C5D78000DC1CB3 /* WrapStencilTemplateSourceEditorCommand.swift */,
 				338424A428C58D1E0063CDAC /* Info.plist */,
-				338424A528C58D1E0063CDAC /* TemplateSwitcher.entitlements */,
+				338424A528C58D1E0063CDAC /* XcodeMetaMode.entitlements */,
 			);
-			path = TemplateSwitcher;
+			path = XcodeMetaMode;
 			sourceTree = "<group>";
 		};
 		338424AF28C58E090063CDAC /* Utilities */ = {
@@ -413,7 +413,7 @@
 				CODE_SIGN_ENTITLEMENTS = MetaMode/MetaMode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaMode/Preview Content\"";
 				DEVELOPMENT_TEAM = L48NM5T974;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -425,7 +425,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -442,7 +442,7 @@
 				CODE_SIGN_ENTITLEMENTS = MetaMode/MetaMode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_ASSET_PATHS = "\"MetaMode/Preview Content\"";
 				DEVELOPMENT_TEAM = L48NM5T974;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -454,7 +454,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -465,22 +465,22 @@
 		338424AA28C58D1E0063CDAC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = TemplateSwitcher/TemplateSwitcher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = XcodeMetaMode/XcodeMetaMode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = L48NM5T974;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TemplateSwitcher/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Template Switcher";
+				INFOPLIST_FILE = XcodeMetaMode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Meta Mode";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Inspired Software, LLC";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.xcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -492,22 +492,22 @@
 		338424AB28C58D1E0063CDAC /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = TemplateSwitcher/TemplateSwitcher.entitlements;
+				CODE_SIGN_ENTITLEMENTS = XcodeMetaMode/XcodeMetaMode.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1.0.0;
+				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEVELOPMENT_TEAM = L48NM5T974;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TemplateSwitcher/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Template Switcher";
+				INFOPLIST_FILE = XcodeMetaMode/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Meta Mode";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "Copyright © 2022 Inspired Software, LLC";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "software.inspired.meta-mode.xcode";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

@@ -18,7 +18,7 @@ Meta Mode is an Xcode Source Editor Extension that wraps and unwraps [Sourcery][
 
 3. Search for "Extensions".
 
-4. Under "Xcode Source Editor" select "Template Switcher".
+4. Under "Xcode Source Editor" select "Meta Mode".
 
 5. Close System Settings.
 
