@@ -32,7 +32,7 @@ Meta Mode is an Xcode Source Editor Extension that wraps and unwraps [Sourcery][
 
 ## Using With Sourcery
 
-A preprocessor to convert back to a [Sourcery][sourcery] compatible Stencil file is included in the Utilities folder. Files an `*.stencil.swift` extension are processed and written to the output folder with a `*.stencil` extension. Make sure the `*.stencil.swift` files are excluded from your build.
+A preprocessor to convert back to a [Sourcery][sourcery] compatible Stencil file is included in the Utilities folder. Files an `*.stencil.swift` extension are processed and written to the output folder with a `*.stencil` extension. The source and output folders may be the same. Make sure the `*.stencil.swift` files are excluded from your build.
 
 ```
 ./Utilities/StencilPreprocessor.swift <source folder> <output folder>
