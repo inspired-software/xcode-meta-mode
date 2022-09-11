@@ -55,6 +55,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		33471B0B28CD861100C15F1C /* generate.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate.sh; sourceTree = "<group>"; };
+		33471B0E28CD865900C15F1C /* Basic.stencil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Basic.stencil.swift; sourceTree = "<group>"; };
+		33471B0F28CD86B300C15F1C /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		33471B1028CD870300C15F1C /* .sourcery.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .sourcery.yml; sourceTree = "<group>"; };
 		3384248328C58C790063CDAC /* Meta Mode for Xcode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Meta Mode for Xcode.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3384248628C58C790063CDAC /* MetaModeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetaModeApp.swift; sourceTree = "<group>"; };
 		3384248828C58C790063CDAC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -93,13 +97,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33471B0C28CD863000C15F1C /* Example */ = {
+			isa = PBXGroup;
+			children = (
+				33471B1028CD870300C15F1C /* .sourcery.yml */,
+				33471B0D28CD864D00C15F1C /* Templates */,
+				33471B0B28CD861100C15F1C /* generate.sh */,
+			);
+			path = Example;
+			sourceTree = "<group>";
+		};
+		33471B0D28CD864D00C15F1C /* Templates */ = {
+			isa = PBXGroup;
+			children = (
+				33471B0E28CD865900C15F1C /* Basic.stencil.swift */,
+			);
+			path = Templates;
+			sourceTree = "<group>";
+		};
 		3384247A28C58C790063CDAC = {
 			isa = PBXGroup;
 			children = (
 				338424AE28C58D9F0063CDAC /* README.md */,
 				338424AD28C58D950063CDAC /* LICENSE */,
+				33471B0F28CD86B300C15F1C /* .gitignore */,
 				3384248528C58C790063CDAC /* MetaMode */,
 				3384249F28C58D1E0063CDAC /* XcodeMetaMode */,
+				33471B0C28CD863000C15F1C /* Example */,
 				338424AF28C58E090063CDAC /* Utilities */,
 				3384249A28C58D1E0063CDAC /* Frameworks */,
 				3384248428C58C790063CDAC /* Products */,

@@ -1,0 +1,5 @@
+sources:
+  - ./Sources/MySwiftModule
+templates:
+  - ./.build/Templates
+output: ./Sources/MySwiftModule/Generated
