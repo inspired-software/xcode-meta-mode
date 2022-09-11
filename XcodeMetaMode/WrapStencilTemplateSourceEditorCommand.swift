@@ -84,8 +84,8 @@ class WrapStencilTemplateSourceEditorCommand: NSObject, XCSourceEditorCommand {
                     newSource.append("{")
                     newSource.append(part.replacingCharacters(in: range, with: "}"))
                 } else { // Standard placeholder
-                    newSource.append("<#")
-                    newSource.append(part.replacingCharacters(in: range, with: "#>"))
+                    newSource.append("<#{")
+                    newSource.append(part.replacingCharacters(in: range, with: "}#>"))
                 }
             }
             newSource.append("\n")

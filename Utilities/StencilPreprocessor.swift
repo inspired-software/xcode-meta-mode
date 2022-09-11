@@ -45,24 +45,24 @@ do {
         var newTemplateSource = ""
         let templateSource = try String(contentsOfFile: sourceFolder + "/" + file, encoding: .utf8)
         for line in templateSource.components(separatedBy: "\n") {
-            let parts = line.components(separatedBy: "<#")
+            let parts = line.components(separatedBy: "<#{")
             newTemplateSource.append(parts[0])
             for part in parts.dropFirst() {
-                guard let range = part.range(of:"#>") else {
+                guard let range = part.range(of:"}#>") else {
                     print("Syntax error. Missing: `#>`")
                     exit(1)
                 }
                 if part.hasPrefix("%") || part.hasPrefix("{") || part.hasPrefix("#") { // Stencil expression
-                    newSource.append("{")
-                    newSource.append(part.replacingCharacters(in: range, with: "}"))
+                    newTemplateSource.append("{")
+                    newTemplateSource.append(part.replacingCharacters(in: range, with: "}"))
                 } else { // Standard placeholder
-                    newSource.append("<#")
-                    newSource.append(part.replacingCharacters(in: range, with: "#>"))
+                    newTemplateSource.append("<#{")
+                    newTemplateSource.append(part.replacingCharacters(in: range, with: "}#>"))
                 }
             }
             newTemplateSource.append("\n")
         }
-        newSource.removeLast() // Remove last '\n'
+        newTemplateSource.removeLast() // Remove last '\n'
         try newTemplateSource.write(to: URL(fileURLWithPath: outputFolder + "/" + file.dropLast(".swift".count)), atomically: true, encoding: String.Encoding.utf8)
     }
 } catch {
